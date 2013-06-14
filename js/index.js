@@ -58,6 +58,9 @@ function publish() {
         files: {
             "index.html": {
                 content: makeSlides()
+            },
+            "slides.md": {
+                content: editor.getValue()
             }
         }
     }));
