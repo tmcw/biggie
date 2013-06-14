@@ -10,6 +10,7 @@ body {
 #slides {
     height:450px;
     width:100%;
+    background:#fff;
 }
 
 .fix3 {
