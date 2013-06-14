@@ -11,7 +11,6 @@
     "marked": "~0.2.9",
     "handlebars-runtime": "~1.0.12",
     "hbsfy": "~0.1.4",
-    "happen": "~0.1.2",
     "underscore": "~1.4.4"
   },
   "repository": "",

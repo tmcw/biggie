@@ -1,6 +1,5 @@
 var CodeMirror = require('codemirror'),
     tmpl = require('./template.hbs'),
-    happen = require('happen'),
     _ = require('underscore'),
     marked = require('marked');
 
