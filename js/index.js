@@ -30,6 +30,8 @@ document.getElementById('style').onchange = function() {
 
 document.getElementById('publish').onclick = publish;
 var link = document.getElementById('link');
+var gistlink = document.getElementById('gistlink');
+var published = document.getElementById('published');
 
 editor.on('change', _.debounce(change, 400));
 
@@ -38,7 +40,14 @@ function publish() {
 
     h.onload = function() {
         var d = (JSON.parse(h.responseText));
-        link.innerHTML = link.href = 'http://bl.ocks.org/d/' + d.id;
+
+        published.className = '';
+
+        link.innerHTML = 'published at http://bl.ocks.org/d/' + d.id;
+        link.href = 'http://bl.ocks.org/d/' + d.id;
+
+        gistlink.innerHTML = 'gist src at http://gist.github.com/' + d.id;
+        gistlink.href = 'http://gist.github.com/' + d.id;
     };
 
     h.open('POST', 'https://api.github.com/gists', true);

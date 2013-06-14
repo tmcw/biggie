@@ -1,6 +1,7 @@
 /* BASICS */
 
 .CodeMirror {
+  padding:10px;
   /* Set height, width, borders, and global font properties here */
   font-family:'Source Code Pro', 'Monaco', 'Consolas', monospace;
   line-height:1.5em !important;
