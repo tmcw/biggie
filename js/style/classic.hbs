@@ -1,0 +1,28 @@
+body {
+  background:#000;
+  color:#fff;
+  font-family:'Georgia';
+  margin:0;
+}
+
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+em {
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 800ms;
+}
+
+strong {
+  font-weight:normal;
+  color:#FFF707;
+}
+
+a {
+  color:#FFF707;
+  text-decoration:none;
+}

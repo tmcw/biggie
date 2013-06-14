@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>biggie: presentations</title>
+        <link rel='stylesheet' type='text/css' href='css/style.css' />
+        <link rel='stylesheet' type='text/css' href='css/site.css' />
+        <link rel='stylesheet' type='text/css' href='css/codemirror.css' />
+        <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
+    </head>
+    <body>
+        <div class='contain'>
+            <div class='fix2'>
+                <textarea id='content'>
+## welcome to biggie
+
+---
+
+Make a slideshow with Markdown in minutes
+
+---
+
+It's [big](https://github.com/tmcw/big), but a little more eazy
+
+---
+
+Write dashes between slides to seperate them.
+
+---
+
+Supports lists
+
+* Like
+* This
+* One
+
+---
+
+Click 'publish' to do it
+
+---
+
+And choose a style
+
+---
+
+![](http://farm3.staticflickr.com/2608/3801835477_b87502a888.jpg) And images
+
+---
+</textarea>
+            </div>
+            <div class='fix3'>
+                <div class='buttons'>
+                    <button id='publish'>publish</button>
+                    <select id='style'>
+                        <option value='original'>Original
+                        <option value='classic'>Classic
+                        <option value='zero'>Zero
+                    </select>
+                    <a target='_blank' id='link'></a>
+                </div>
+                <iframe src='' id='slides'></iframe>
+            </div>
+        </div>
+        <script src='js/site.js'></script>
+    </body>
+</html>

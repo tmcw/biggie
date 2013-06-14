@@ -1,0 +1,55 @@
+.fillD {
+    background:#000;
+    color:#fff;
+}
+
+#slides {
+    height:450px;
+    width:100%;
+}
+
+.fix3 {
+    position:fixed;
+    right:0;
+    bottom:0;
+    width:40%;
+    top:0;
+}
+
+.fix2 {
+    position:absolute;
+    top:0;
+    left:0;
+    width:60%;
+}
+
+.contain {
+    width:1000px;
+    margin:0 auto;
+}
+
+.buttons {
+    padding:5px;
+    background:#eee;
+}
+
+.buttons button {
+    font:inherit;
+    padding:5px;
+    background:#666;
+    color:#fff;
+    border:none;
+    border-radius:2px;
+}
+
+select {
+    width:200px;
+    display:inline;
+    height:35px;
+}
+
+#link {
+    font-size:small;
+    margin-left:5px;
+    background:yellow;
+}

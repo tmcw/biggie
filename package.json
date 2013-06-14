@@ -1,0 +1,20 @@
+{
+  "name": "biggie",
+  "version": "0.0.0",
+  "description": "presentations without thinking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "codemirror": "https://github.com/tmcw/CodeMirror/archive/module-export.tar.gz",
+    "marked": "~0.2.9",
+    "handlebars-runtime": "~1.0.12",
+    "hbsfy": "~0.1.4",
+    "happen": "~0.1.2",
+    "underscore": "~1.4.4"
+  },
+  "repository": "",
+  "author": "Tom MacWright <tom@macwright.org>",
+  "license": "BSD"
+}
