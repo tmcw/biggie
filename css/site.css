@@ -34,6 +34,7 @@ body {
 }
 
 .buttons {
+    font-size:12px;
     padding:10px;
     vertical-align:middle;
 }
