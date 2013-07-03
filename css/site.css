@@ -35,6 +35,7 @@ body {
 
 .buttons {
     padding:10px;
+    vertical-align:middle;
 }
 
 .buttons a {
