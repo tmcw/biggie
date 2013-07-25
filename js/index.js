@@ -68,11 +68,7 @@ function publish() {
 function makeSlides() {
     var val = editor.getValue();
 
-    var divs = val.split('---').filter(function(v) {
-        return v.replace(/\s/g, '');
-    }).map(function(v) {
-        return '<div>' + marked(v) + '</div>';
-    }).join('\n');
+    var divs = marked(val).replace(/\<(\/)?[ph]\d?\>/g,'<$1div>');
 
     var page = tmpl({
         title: 'Foo',
