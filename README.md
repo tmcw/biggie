@@ -1,12 +1,10 @@
-biggie
-======
+# biggie
 
 biggie is the last mile of [big](https://github.com/tmcw/big). It turns Markdown into slides,
 and slides into a website, and even posts it online for you with the magic of
 [bl.ocks.org](http://bl.ocks.org/) and [gist](http://gist.github.com).
 
-develop
-=======
+## develop
 
     git@github.com:tmcw/biggie.git
 
@@ -24,3 +22,8 @@ And in the other
     serve
 
 (or any other [simple development server](https://gist.github.com/tmcw/4989751)).
+
+## See Also
+
+* [killercup's fork](http://killercup.github.io/biggie/) ([src](https://github.com/killercup/biggie)) adds localStorage backup,
+  code highlighting, and style tweaks.
