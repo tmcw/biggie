@@ -27,3 +27,7 @@ And in the other
 
 * [killercup's fork](http://killercup.github.io/biggie/) ([src](https://github.com/killercup/biggie)) adds localStorage backup,
   code highlighting, and style tweaks.
+
+## license
+
+Public Domain or equivalent (CC0 internationally)
