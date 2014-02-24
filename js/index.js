@@ -52,13 +52,13 @@ function publish() {
     h.open('POST', 'https://api.github.com/gists', true);
 
     h.send(JSON.stringify({
-        description: "Presentation",
+        description: 'Presentation',
         public: true,
         files: {
-            "index.html": {
+            'index.html': {
                 content: makeSlides()
             },
-            "slides.md": {
+            'slides.md': {
                 content: editor.getValue()
             }
         }

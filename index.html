@@ -2,15 +2,13 @@
 <html>
     <head>
         <title>biggie: presentations</title>
-        <link rel='stylesheet' type='text/css' href='css/style.css' />
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <link rel='stylesheet' type='text/css' href='css/codemirror.css' />
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
     </head>
-    <body>
+    <body id='biggie'>
         <div class='contain'>
-            <div class='fix2'>
                 <textarea id='content'>
 ## welcome to biggie
 
@@ -48,7 +46,6 @@ And choose a style
 
 ---
 </textarea>
-            </div>
             <div class='fix3'>
                 <div id='published' class='hide'>
                     <a target='_blank' id='link'></a>
@@ -61,11 +58,12 @@ And choose a style
                         <option value='classic'>Classic
                         <option value='zero'>Zero
                     </select>
-                    <a href='http://daringfireball.net/projects/markdown/basics'>markdown?</a>
-                    <a title='Help out or report an issue' href='https://github.com/tmcw/biggie'>github</a>
+                    <a href='http://daringfireball.net/projects/markdown/basics'>markdown docs</a>
                     <a title='I made this!' href="https://twitter.com/tmcw">by @tmcw</a>
                 </div>
                 <iframe src='' id='slides'></iframe>
+                <iframe id='follow-button' src="http://ghbtns.com/github-btn.html?user=tmcw&repo=biggie&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
             </div>
         </div>
         <script src='js/site.js'></script>

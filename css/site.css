@@ -1,10 +1,16 @@
 body {
-    background:#555a6a;
+    font-family:sans-serif;
+    background:#f6f6f6;
 }
 
-.fillD {
-    background:#000;
-    color:#fff;
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+iframe {
+    border:none;
 }
 
 #slides {
@@ -14,39 +20,47 @@ body {
 }
 
 .fix3 {
-    position:fixed;
+    position:absolute;
     right:0;
     bottom:0;
     width:40%;
     top:0;
+    padding:10px;
 }
 
-.fix2 {
+#biggie .CodeMirror-wrap {
     position:absolute;
     top:0;
     left:0;
+    bottom:0;
     width:60%;
+    border-right:1px solid #aaa;
+}
+
+#follow-button {
+    position:absolute;
+    right:5px;
+    bottom:5px;
 }
 
 .contain {
-    width:1000px;
+    max-width:1000px;
     margin:0 auto;
 }
 
 .buttons {
     font-size:12px;
-    padding:10px;
+    padding:10px 0;
     vertical-align:middle;
 }
 
 .buttons a {
-    color:#fff;
     padding:10px;
 }
 
 .buttons button {
     font:inherit;
-    padding:5px;
+    padding:3px 5px;
     margin:0;
     background:#8cc625;
     color:#fff;

@@ -1,8 +1,9 @@
 # biggie
 
-biggie is the last mile of [big](https://github.com/tmcw/big). It turns Markdown into slides,
+biggie is the last mile of [big](https://github.com/tmcw/big). It turns
+[Markdown](http://daringfireball.net/projects/markdown/) into slides,
 and slides into a website, and even posts it online for you with the magic of
-[bl.ocks.org](http://bl.ocks.org/) and [gist](http://gist.github.com).
+[bl.ocks.org](http://bl.ocks.org/) and [Gist](http://gist.github.com).
 
 ## develop
 
@@ -12,16 +13,13 @@ Then dependencies
 
     npm install
 
-I tend to use the [watch](http://linux.about.com/library/cmd/blcmdl1_watch.htm)
-utility, so in one terminal,
+To start a server, run
 
-    watch make
+    npm start
 
-And in the other
+To bake `js/site.js` for static serving, run
 
-    serve
-
-(or any other [simple development server](https://gist.github.com/tmcw/4989751)).
+    npm run-script make
 
 ## See Also
 
