@@ -7,10 +7,16 @@
     "start": "beefy js/index.js:js/site.js -o",
     "make": "browserify js/index.js > js/site.js"
   },
+  "bin": {
+    "biggie": "cli.js"
+  },
   "dependencies": {
     "codemirror": "https://github.com/tmcw/CodeMirror/archive/module-export.tar.gz",
     "marked": "~0.3.1",
-    "underscore": "~1.6.0"
+    "underscore": "~1.6.0",
+    "concat-stream": "~1.4.1",
+    "mustache": "~0.8.1",
+    "minimist": "0.0.8"
   },
   "repository": "git@github.com:tmcw/biggie.git",
   "author": "Tom MacWright <tom@macwright.org>",
@@ -19,5 +25,9 @@
     "beefy": "~1.1.0",
     "hbsfy": "~1.3.2"
   },
-  "browserify": { "transform": [ "hbsfy" ] }
+  "browserify": {
+    "transform": [
+      "hbsfy"
+    ]
+  }
 }
