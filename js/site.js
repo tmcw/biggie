@@ -53,13 +53,13 @@ function publish() {
     h.open('POST', 'https://api.github.com/gists', true);
 
     h.send(JSON.stringify({
-        description: "Presentation",
+        description: 'Presentation',
         public: true,
         files: {
-            "index.html": {
+            'index.html': {
                 content: makeSlides()
             },
-            "slides.md": {
+            'slides.md': {
                 content: editor.getValue()
             }
         }
@@ -629,7 +629,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "// hbsfy compiled Handlebars template\nvar Handlebars = require('hbsfy/runtime');\nmodule.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {\n  this.compilerInfo = [4,'>= 1.0.0'];\nhelpers = this.merge(helpers, Handlebars.helpers); data = data || {};\n  \n\n\n  return \"body {\\n  background:#000;\\n  color:#fff;\\n  font-family:'Georgia';\\n  margin:0;\\n}\\n\\n@-webkit-keyframes blinker {\\n  from { opacity: 1.0; }\\n  to { opacity: 0.0; }\\n}\\n\\nem {\\n  -webkit-animation-name: blinker;\\n  -webkit-animation-iteration-count: infinite;\\n  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);\\n  -webkit-animation-duration: 800ms;\\n}\\n\\nstrong {\\n  font-weight:normal;\\n  color:#FFF707;\\n}\\n\\na {\\n  color:#FFF707;\\n  text-decoration:none;\\n}\\n\";\n  });\n";
+  return "body {\n  background:#000;\n  color:#fff;\n  font-family:'Georgia';\n  margin:0;\n}\n\n@-webkit-keyframes blinker {\n  from { opacity: 1.0; }\n  to { opacity: 0.0; }\n}\n\nem {\n  -webkit-animation-name: blinker;\n  -webkit-animation-iteration-count: infinite;\n  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);\n  -webkit-animation-duration: 800ms;\n}\n\nstrong {\n  font-weight:normal;\n  color:#FFF707;\n}\n\na {\n  color:#FFF707;\n  text-decoration:none;\n}\n\ndiv {\n  cursor:pointer;\n  cursor:hand;\n  position:absolute;\n  top:0;\n  left:0;\n}\n";
   });
 
 },{"hbsfy/runtime":15}],4:[function(require,module,exports){
@@ -641,7 +641,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "// hbsfy compiled Handlebars template\nvar Handlebars = require('hbsfy/runtime');\nmodule.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {\n  this.compilerInfo = [4,'>= 1.0.0'];\nhelpers = this.merge(helpers, Handlebars.helpers); data = data || {};\n  \n\n\n  return \"body {\\n  font-family: 'Helvetica';\\n  letter-spacing:-5px;\\n  background:#000;\\n  background-size:100%;\\n  color:#fff;\\n  margin:0;\\n  padding:0;\\n  font-weight:bold;\\n}\\n\\nh1, h2, h3, p {\\n  margin:0;\\n}\\n\\nem, a {\\n  font-style:normal;\\n  color:#8dbd0c;\\n}\\n\\na {\\n  background: #34d0e7;\\n  color:#000;\\n  text-decoration:none;\\n}\\n\\nimg {\\n  width:100%;\\n}\\n\\ndiv {\\n  cursor:pointer;\\n  cursor:hand;\\n  position:absolute;\\n  top:0;\\n  left:0;\\n}\\n\";\n  });\n";
+  return "body {\n  font-family: 'Helvetica';\n  letter-spacing:-5px;\n  background:#000;\n  background-size:100%;\n  color:#fff;\n  margin:0;\n  padding:0;\n  font-weight:bold;\n}\n\nh1, h2, h3, p {\n  margin:0;\n}\n\nem, a {\n  font-style:normal;\n  color:#8dbd0c;\n}\n\na {\n  background: #34d0e7;\n  color:#000;\n  text-decoration:none;\n}\n\nimg {\n  width:100%;\n}\n\ndiv {\n  cursor:pointer;\n  cursor:hand;\n  position:absolute;\n  top:0;\n  left:0;\n}\n";
   });
 
 },{"hbsfy/runtime":15}],5:[function(require,module,exports){
@@ -653,7 +653,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "// hbsfy compiled Handlebars template\nvar Handlebars = require('hbsfy/runtime');\nmodule.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {\n  this.compilerInfo = [4,'>= 1.0.0'];\nhelpers = this.merge(helpers, Handlebars.helpers); data = data || {};\n  var buffer = \"\";\n\n\n  return buffer;\n  });\n";
+  return "div {\n  cursor:pointer;\n  cursor:hand;\n  position:absolute;\n  top:0;\n  left:0;\n}\n";
   });
 
 },{"hbsfy/runtime":15}],6:[function(require,module,exports){
@@ -662,10 +662,23 @@ var Handlebars = require('hbsfy/runtime');
 module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  
+  var buffer = "", stack1, helper, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  return "// hbsfy compiled Handlebars template\nvar Handlebars = require('hbsfy/runtime');\nmodule.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {\n  this.compilerInfo = [4,'>= 1.0.0'];\nhelpers = this.merge(helpers, Handlebars.helpers); data = data || {};\n  var buffer = \"\", stack1, helper, functionType=\"function\", escapeExpression=this.escapeExpression;\n\n\n  buffer += \"<!DOCTYPE html>\\n<html>\\n<head>\\n<title>\";\n  if (helper = helpers.title) { stack1 = helper.call(depth0, {hash:{},data:data}); }\n  else { helper = (depth0 && depth0.title); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }\n  buffer += escapeExpression(stack1)\n    + \"</title>\\n<meta charset='utf-8' />\\n<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />\\n<style type='text/css'>\\n\";\n  if (helper = helpers.style) { stack1 = helper.call(depth0, {hash:{},data:data}); }\n  else { helper = (depth0 && depth0.style); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }\n  if(stack1 || stack1 === 0) { buffer += stack1; }\n  buffer += \"\\n</style>\\n<script type='text/javascript'>\\nwindow.onload = function() {\\n    var s = document.getElementsByTagName('div'), cur = 0, ti;\\n    if (!s) return;\\n    function go(n) {\\n        cur = n;\\n        var i = 1e3, e = s[n], t;\\n        for (var k = 0; k < s.length; k++) s[k].style.display = 'none';\\n        e.style.display = 'inline';\\n        e.style.fontSize = i + 'px';\\n        if (e.firstChild.nodeName === 'IMG') {\\n            document.body.style.backgroundImage = 'url(' + e.firstChild.src + ')';\\n            e.firstChild.style.display = 'none';\\n            if ('classList' in e) e.classList.add('imageText');\\n        } else {\\n            document.body.style.backgroundImage = '';\\n            document.body.style.backgroundColor = e.style.backgroundColor;\\n        }\\n        if (ti !== undefined) window.clearInterval(ti);\\n        t = parseInt(e.getAttribute('time-to-next') || 0, 10);\\n        if (t > 0) ti = window.setTimeout(fwd, (t * 1000));\\n        while (\\n            e.offsetWidth > window.innerWidth ||\\n            e.offsetHeight > window.innerHeight) {\\n            e.style.fontSize = (i -= i * 0.05) + 'px';\\n            if (i < 0) break;\\n        }\\n        e.style.marginTop = ((window.innerHeight - e.offsetHeight) / 2) + 'px';\\n        if (window.location.hash !== n) window.location.hash = n;\\n        document.title = e.textContent || e.innerText;\\n    }\\n    document.onclick = function() { go(++cur % (s.length)); };\\n    function fwd() { go(Math.min(s.length - 1, ++cur)); }\\n    function rev() { go(Math.max(0, --cur)); }\\n    document.onkeydown = function(e) {\\n        if (e.which === 39) fwd();\\n        if (e.which === 37) rev();\\n    };\\n    document.ontouchstart = function(e) {\\n        var x0 = e.changedTouches[0].pageX;\\n        document.ontouchend = function(e) {\\n            var x1 = e.changedTouches[0].pageX;\\n            if (x1 - x0 < 0) fwd();\\n            if (x1 - x0 > 0) rev();\\n        };\\n    };\\n    function parse_hash() {\\n        return Math.max(Math.min(\\n            s.length - 1,\\n            parseInt(window.location.hash.substring(1), 10)), 0);\\n    }\\n    if (window.location.hash) cur = parse_hash() || cur;\\n    window.onhashchange = function() {\\n        var c = parse_hash();\\n        if (c !== cur) go(c);\\n    };\\n\\n    go(cur);\\n};\\n</script></head><body>\\n\";\n  if (helper = helpers.slides) { stack1 = helper.call(depth0, {hash:{},data:data}); }\n  else { helper = (depth0 && depth0.slides); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }\n  if(stack1 || stack1 === 0) { buffer += stack1; }\n  buffer += \"\\n\";\n  return buffer;\n  });\n";
+  buffer += "<!DOCTYPE html>\n<html>\n<head>\n<title>";
+  if (helper = helpers.title) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.title); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  buffer += escapeExpression(stack1)
+    + "</title>\n<meta charset='utf-8' />\n<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />\n<style type='text/css'>\n";
+  if (helper = helpers.style) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.style); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n</style>\n<script type='text/javascript'>\nwindow.onload = function() {\n    var s = document.getElementsByTagName('div'), cur = 0, ti;\n    if (!s) return;\n    function go(n) {\n        cur = n;\n        var i = 1e3, e = s[n], t;\n        for (var k = 0; k < s.length; k++) s[k].style.display = 'none';\n        e.style.display = 'inline';\n        e.style.fontSize = i + 'px';\n        if (e.firstChild.nodeName === 'IMG') {\n            document.body.style.backgroundImage = 'url(' + e.firstChild.src + ')';\n            e.firstChild.style.display = 'none';\n            if ('classList' in e) e.classList.add('imageText');\n        } else {\n            document.body.style.backgroundImage = '';\n            document.body.style.backgroundColor = e.style.backgroundColor;\n        }\n        if (ti !== undefined) window.clearInterval(ti);\n        t = parseInt(e.getAttribute('time-to-next') || 0, 10);\n        if (t > 0) ti = window.setTimeout(fwd, (t * 1000));\n        while (\n            e.offsetWidth > window.innerWidth ||\n            e.offsetHeight > window.innerHeight) {\n            e.style.fontSize = (i -= i * 0.05) + 'px';\n            if (i < 0) break;\n        }\n        e.style.marginTop = ((window.innerHeight - e.offsetHeight) / 2) + 'px';\n        if (window.location.hash !== n) window.location.hash = n;\n        document.title = e.textContent || e.innerText;\n    }\n    document.onclick = function() { go(++cur % (s.length)); };\n    function fwd() { go(Math.min(s.length - 1, ++cur)); }\n    function rev() { go(Math.max(0, --cur)); }\n    document.onkeydown = function(e) {\n        if (e.which === 39) fwd();\n        if (e.which === 37) rev();\n    };\n    document.ontouchstart = function(e) {\n        var x0 = e.changedTouches[0].pageX;\n        document.ontouchend = function(e) {\n            var x1 = e.changedTouches[0].pageX;\n            if (x1 - x0 < 0) fwd();\n            if (x1 - x0 > 0) rev();\n        };\n    };\n    function parse_hash() {\n        return Math.max(Math.min(\n            s.length - 1,\n            parseInt(window.location.hash.substring(1), 10)), 0);\n    }\n    if (window.location.hash) cur = parse_hash() || cur;\n    window.onhashchange = function() {\n        var c = parse_hash();\n        if (c !== cur) go(c);\n    };\n\n    go(cur);\n};\n</script></head><body>\n";
+  if (helper = helpers.slides) { stack1 = helper.call(depth0, {hash:{},data:data}); }
+  else { helper = (depth0 && depth0.slides); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
+  if(stack1 || stack1 === 0) { buffer += stack1; }
+  buffer += "\n";
+  return buffer;
   });
 
 },{"hbsfy/runtime":15}],7:[function(require,module,exports){

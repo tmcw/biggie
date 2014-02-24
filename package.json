@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "beefy js/index.js:js/site.js -o",
-    "make": "browserify -t hbsfy js/index.js > js/site.js"
+    "make": "browserify js/index.js > js/site.js"
   },
   "dependencies": {
     "codemirror": "https://github.com/tmcw/CodeMirror/archive/module-export.tar.gz",
