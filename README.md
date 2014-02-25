@@ -1,5 +1,7 @@
 # biggie
 
+![](mascot.jpg)
+
 biggie is the last mile of [big](https://github.com/tmcw/big). It turns
 [Markdown](http://daringfireball.net/projects/markdown/) into slides,
 and slides into a website, and even posts it online for you with the magic of
