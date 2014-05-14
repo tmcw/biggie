@@ -14,6 +14,8 @@ window.onload = function() {
     function go(n) {
         cur = n;
         var i = 1e3, e = s[n], t;
+        // if the div has a bodyclass data attribute, add it to the body
+        document.body.className = e.dataset.bodyclass || '';
         for (var k = 0; k < s.length; k++) s[k].style.display = 'none';
         e.style.display = 'inline';
         e.style.fontSize = i + 'px';
@@ -31,7 +33,7 @@ window.onload = function() {
         while (
             e.offsetWidth > window.innerWidth ||
             e.offsetHeight > window.innerHeight) {
-            e.style.fontSize = (i -= 5) + 'px';
+            e.style.fontSize = (i -= 2) + 'px';
             if (i < 0) break;
         }
         e.style.marginTop = ((window.innerHeight - e.offsetHeight) / 2) + 'px';
