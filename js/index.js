@@ -10,7 +10,7 @@ var styles = {
 };
 
 // load JS support for CodeMirror
-require('./markdown')(CodeMirror);
+// require('./markdown')(CodeMirror);
 
 var editor = CodeMirror.fromTextArea(document.getElementById('content'), {
     mode: 'markdown',
