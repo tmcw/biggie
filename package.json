@@ -1,6 +1,6 @@
 {
   "name": "biggie",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "presentations without thinking",
   "main": "index.js",
   "scripts": {
