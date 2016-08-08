@@ -19,6 +19,16 @@ echo "# hi" | biggie > index.html
 Pipe it into [browser](https://gist.github.com/defunkt/318247) or [bcat](http://rtomayko.github.io/bcat/)
 to just view it in a browser immediately.
 
+### styling slides
+
+biggie can style your big presentation just the way you like it. To replace the
+default CSS provided by biggie, use the `--style` flag to point at a CSS file
+with your styles:
+
+```
+biggie my_presentation.md --style ./css/my_big_styles.css > index.html
+```
+
 ## develop
 
     git@github.com:tmcw/biggie.git
