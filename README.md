@@ -1,5 +1,7 @@
 # biggie
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tmcw/biggie.svg)](https://greenkeeper.io/)
+
 ![](mascot.jpg)
 
 biggie is the last mile of [big](https://github.com/tmcw/big). It turns
