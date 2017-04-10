@@ -11,12 +11,12 @@
     "biggie": "cli.js"
   },
   "dependencies": {
-    "codemirror": "5.14.0",
-    "concat-stream": "~1.5.1",
-    "handlebars": "4.0.5",
+    "codemirror": "5.25.0",
+    "concat-stream": "~1.6.0",
+    "handlebars": "4.0.6",
     "marked": "~0.3.1",
     "minimist": "1.2.0",
-    "mustache": "~2.2.1",
+    "mustache": "~2.3.0",
     "underscore": "~1.8.3"
   },
   "repository": "git@github.com:tmcw/biggie.git",
@@ -24,7 +24,7 @@
   "license": "BSD",
   "devDependencies": {
     "beefy": "~2.1.6",
-    "browserify": "13.0.1",
+    "browserify": "14.3.0",
     "hbsfy": "~2.7.0"
   },
   "browserify": {
