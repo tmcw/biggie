@@ -7,15 +7,10 @@
     "start": "beefy js/index.js:js/site.js -o",
     "make": "browserify js/index.js > js/site.js"
   },
-  "bin": {
-    "biggie": "cli.js"
-  },
   "dependencies": {
     "codemirror": "5.14.0",
-    "concat-stream": "~1.5.1",
     "handlebars": "4.0.5",
     "marked": "~0.3.1",
-    "minimist": "1.2.0",
     "mustache": "~2.2.1",
     "underscore": "~1.8.3"
   },
